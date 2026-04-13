@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tanner Owings — Strong Trading Coaching</title>
+<meta name="description" content="$232K year. Small group coaching capped at 25 traders. Process over indicators.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#050a08;--bg-2:#0a120e;--surface:#10181d;--line:rgba(34,197,94,.15);--text:#edf9f1;--muted:#8aa399;--accent:#22c55e;--accent-2:#4ade80;--glow:#16a34a}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;line-height:1.6;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(34,197,94,.015) 1px,transparent 1px),linear-gradient(90deg,rgba(34,197,94,.015) 1px,transparent 1px);background-size:50px 50px;pointer-events:none;z-index:0}
+body::after{content:'';position:fixed;top:-30%;left:50%;transform:translateX(-50%);width:80%;height:70%;background:radial-gradient(circle,rgba(34,197,94,.08) 0%,transparent 60%);pointer-events:none;z-index:0}
+.container{max-width:1180px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+nav{padding:28px 0;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(5,10,8,.94);backdrop-filter:blur(14px);z-index:100}
+.nav-inner{display:flex;justify-content:space-between;align-items:center}
+.logo{font-family:'JetBrains Mono',monospace;font-weight:600;font-size:18px;letter-spacing:-.01em}
+.logo span{color:var(--accent-2)}
+.nav-cta{padding:10px 22px;background:linear-gradient(135deg,var(--accent) 0%,var(--glow) 100%);color:#050a08;border-radius:8px;text-decoration:none;font-weight:700;font-size:14px}
+section{padding:100px 0}
+.eyebrow{display:inline-block;padding:6px 14px;background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.3);border-radius:20px;font-size:12px;font-weight:600;color:var(--accent-2);letter-spacing:.15em;text-transform:uppercase;margin-bottom:24px;font-family:'JetBrains Mono',monospace}
+h1{font-size:clamp(42px,6vw,76px);font-weight:800;line-height:1.03;letter-spacing:-.03em;margin-bottom:24px}
+h1 em{font-style:normal;background:linear-gradient(135deg,var(--accent) 0%,var(--accent-2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+h2{font-size:clamp(32px,4vw,48px);font-weight:700;line-height:1.15;letter-spacing:-.02em;margin-bottom:20px}
+h3{font-size:22px;font-weight:600;margin-bottom:14px}
+p{color:var(--muted);font-size:17px;max-width:680px}
+.hero{padding-top:80px;text-align:center}
+.hero p{font-size:20px;margin:0 auto 40px;max-width:720px}
+.cta-primary{display:inline-block;padding:18px 38px;background:linear-gradient(135deg,var(--accent) 0%,var(--glow) 100%);color:#050a08;text-decoration:none;border-radius:12px;font-weight:700;font-size:16px;box-shadow:0 10px 40px rgba(34,197,94,.25);transition:.2s}
+.cta-primary:hover{transform:translateY(-2px)}
+.vsl-box{max-width:900px;margin:60px auto;aspect-ratio:16/9;background:linear-gradient(135deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:16px;display:flex;align-items:center;justify-content:center;position:relative}
+.vsl-box::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at center,rgba(34,197,94,.08) 0%,transparent 60%)}
+.play-btn{width:88px;height:88px;border-radius:50%;background:rgba(34,197,94,.15);border:2px solid var(--accent);display:flex;align-items:center;justify-content:center;z-index:1}
+.play-btn svg{width:32px;height:32px;fill:var(--accent-2);margin-left:4px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin:80px 0 0;padding:40px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat-num{font-family:'JetBrains Mono',monospace;font-size:36px;font-weight:700;background:linear-gradient(135deg,var(--accent) 0%,var(--accent-2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-.02em}
+.stat-label{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-top:6px}
+.problem-grid,.pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:50px}
+.card{padding:36px;background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:16px;transition:.3s}
+.card:hover{border-color:rgba(34,197,94,.4);transform:translateY(-4px)}
+.card-num{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--accent-2);font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px}
+.card h3{color:var(--text)}
+.card p{font-size:15px}
+.divider{height:1px;background:linear-gradient(90deg,transparent 0%,var(--line) 50%,transparent 100%)}
+.lead-capture{background:linear-gradient(135deg,rgba(34,197,94,.08) 0%,rgba(22,163,74,.03) 100%);border:1px solid rgba(34,197,94,.2);border-radius:24px;padding:70px 60px;text-align:center;margin:80px 0}
+.lead-capture h2{max-width:640px;margin:0 auto 20px}
+.form-row{display:flex;gap:12px;max-width:520px;margin:36px auto 0}
+.form-row input{flex:1;padding:18px 22px;background:var(--bg);border:1px solid var(--line);border-radius:12px;color:var(--text);font-size:15px;font-family:inherit}
+.form-row input:focus{outline:none;border-color:var(--accent)}
+.form-row button{padding:18px 32px;background:linear-gradient(135deg,var(--accent) 0%,var(--glow) 100%);color:#050a08;border:none;border-radius:12px;font-weight:700;font-size:15px;cursor:pointer;font-family:inherit}
+.offer-box{background:linear-gradient(135deg,#0a140f 0%,#12201a 100%);border:1px solid rgba(34,197,94,.25);border-radius:24px;padding:60px;margin-top:40px}
+.offer-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:60px;align-items:center}
+.offer-price{font-size:42px;font-weight:800;background:linear-gradient(135deg,var(--accent) 0%,var(--accent-2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-.02em;line-height:1.1}
+.offer-price small{font-size:15px;color:var(--muted);font-weight:500;-webkit-text-fill-color:var(--muted);display:block;margin-top:8px}
+.feature-list{list-style:none;margin-top:24px}
+.feature-list li{padding:12px 0;color:var(--text);display:flex;align-items:flex-start;gap:12px;font-size:15px}
+.feature-list li::before{content:'›';color:var(--accent-2);font-weight:700;flex-shrink:0;font-family:'JetBrains Mono',monospace}
+.bio{display:grid;grid-template-columns:1fr 1.5fr;gap:60px;align-items:center}
+.bio-img{aspect-ratio:4/5;background:linear-gradient(135deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:20px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px}
+.faq-item{border-bottom:1px solid var(--line);padding:24px 0;cursor:pointer}
+.faq-q{display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:18px;color:var(--text)}
+.faq-plus{width:24px;height:24px;position:relative;flex-shrink:0}
+.faq-plus::before,.faq-plus::after{content:'';position:absolute;background:var(--accent-2);top:50%;left:50%;transition:.3s}
+.faq-plus::before{width:14px;height:2px;transform:translate(-50%,-50%)}
+.faq-plus::after{width:2px;height:14px;transform:translate(-50%,-50%)}
+.faq-item.open .faq-plus::after{transform:translate(-50%,-50%) rotate(90deg);opacity:0}
+.faq-a{max-height:0;overflow:hidden;transition:.3s}
+.faq-item.open .faq-a{max-height:300px;padding-top:14px}
+.footer{padding:60px 0;border-top:1px solid var(--line);text-align:center}
+.footer p{margin:0 auto;font-size:14px}
+@media(max-width:768px){.problem-grid,.pillar-grid,.stats{grid-template-columns:1fr}.offer-grid,.bio{grid-template-columns:1fr}.lead-capture,.offer-box{padding:40px 24px}.form-row{flex-direction:column}section{padding:70px 0}.stats{gap:20px;grid-template-columns:repeat(2,1fr)}}
+.reveal{opacity:0;transform:translateY(30px);transition:.8s}
+.reveal.in{opacity:1;transform:translateY(0)}
+</style></head><body>
+<nav><div class="container nav-inner"><div class="logo">STRONG <span>TRADING</span></div><a href="#apply" class="nav-cta">Apply</a></div></nav>
+<section class="hero"><div class="container">
+<div class="eyebrow reveal">GROUP COACHING · 25-TRADER CAP</div>
+<h1 class="reveal">$232K In Trading Profits Last Year. <em>Process, Not Indicators.</em></h1>
+<p class="reveal">Small-group coaching for serious futures and options traders. Capped at 25 per cohort. No signals, no pumps, no indicators — just the process that actually works.</p>
+<div class="vsl-box reveal"><div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+<a href="#apply" class="cta-primary reveal">Apply For The Community →</a>
+<div class="stats reveal">
+<div><div class="stat-num">$232K</div><div class="stat-label">2025 Profits</div></div>
+<div><div class="stat-num">25</div><div class="stat-label">Seat Cap</div></div>
+<div><div class="stat-num">340</div><div class="stat-label">Trading Days Logged</div></div>
+<div><div class="stat-num">3yr+</div><div class="stat-label">Full-Time Trading</div></div>
+</div>
+</div></section>
+<div class="divider"></div>
+<section><div class="container">
+<div class="eyebrow reveal">THE PROBLEM</div>
+<h2 class="reveal">95% Of Traders Blow Their Accounts.<br>It's Never About Strategy.</h2>
+<p class="reveal" style="font-size:18px">Information is free. Process is what's missing.</p>
+<div class="problem-grid">
+<div class="card reveal"><div class="card-num">KILLER 01</div><h3>Indicator Addiction</h3><p>Fibonacci, RSI, MACD, 20 more on the chart. None of them fix the fact that you don't have written rules for entries, exits, and risk.</p></div>
+<div class="card reveal"><div class="card-num">KILLER 02</div><h3>No Journal</h3><p>A trader with 300 journaled trades compounds. A trader with 300 unjournaled trades makes the same mistakes forever.</p></div>
+<div class="card reveal"><div class="card-num">KILLER 03</div><h3>Zero Accountability</h3><p>Solo traders who try to figure it out alone take 5-7 years. Traders with a mentor and accountability take 1-2.</p></div>
+</div>
+</div></section>
+<div class="divider"></div>
+<section><div class="container">
+<div class="eyebrow reveal">THE SYSTEM</div>
+<h2 class="reveal">The 3-Part Daily Framework</h2>
+<div class="pillar-grid">
+<div class="card reveal"><div class="card-num">PRE-MARKET (30 MIN)</div><h3>Game Plan</h3><p>Watchlist. Key levels. Risk budget for the day. Written, not mental. The foundation of every session.</p></div>
+<div class="card reveal"><div class="card-num">MARKET HOURS</div><h3>Execute The Plan</h3><p>If a setup wasn't on the plan, you don't take it. The discipline to skip unplanned trades is 80% of my edge.</p></div>
+<div class="card reveal"><div class="card-num">POST-MARKET (20 MIN)</div><h3>Journal + Review</h3><p>Every trade. Win or loss. Why you took it. What you felt. What you'd do differently. Compounds over time.</p></div>
+</div>
+</div></section>
+<div class="divider"></div>
+<section><div class="container">
+<div class="lead-capture reveal">
+<div class="eyebrow">FREE RESOURCE</div>
+<h2>The Pre-Market Game Plan PDF</h2>
+<p style="margin:0 auto">The exact template I use every morning before I look at a single chart. Fill it in before the open. Trade only what's on it.</p>
+<form class="form-row" onsubmit="event.preventDefault();alert('Check your inbox — PDF sent.')">
+<input type="email" placeholder="Enter your email" required><button type="submit">Send It →</button>
+</form>
+</div>
+</div></section>
+<div class="divider"></div>
+<section id="apply"><div class="container">
+<div class="eyebrow reveal">THE COMMUNITY</div>
+<h2 class="reveal">Strong Trading Group Coaching</h2>
+<div class="offer-box reveal"><div class="offer-grid">
+<div>
+<div class="offer-price">Application Based<small>Limited seats · Payment plans available</small></div>
+<p style="margin-top:16px">Quarterly cohorts capped at 25 traders. Investment discussed on the intro call. Payment plans standard. Cohorts fill fast because the cap is real.</p>
+<ul class="feature-list">
+<li>Private Discord (25 traders per cohort, hard cap)</li>
+<li>Bi-weekly live group coaching with Tanner</li>
+<li>Daily pre-market gameplans posted by Tanner</li>
+<li>Daily post-market trade recaps and reviews</li>
+<li>Trading psychology curriculum (first module)</li>
+<li>Prop firm discount codes (FTMO, MFF, TopStep, others)</li>
+<li>Direct DM access during market hours</li>
+</ul>
+</div>
+<div><div style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);border-radius:16px;padding:32px;text-align:center">
+<div class="eyebrow">PROOF</div>
+<h3 style="margin-bottom:12px">Jake. Retail → Funded.<br>4 Months.</h3>
+<p style="margin:0 auto 24px">Blown 4 accounts before joining. Passed his first prop challenge on attempt 2. First funded payout $2,400.</p>
+<a href="#" class="cta-primary" style="width:100%">Apply Now →</a>
+</div></div>
+</div></div>
+</div></section>
+<div class="divider"></div>
+<section><div class="container">
+<div class="bio">
+<div class="bio-img reveal">[Tanner's photo]</div>
+<div class="reveal">
+<div class="eyebrow">ABOUT TANNER</div>
+<h2>Day Trading Coach. $232K Year.</h2>
+<p style="font-size:17px;margin-top:20px">Full-time futures and options trader. Pulled $232K in verified 2025 profits trading MES and credit spreads. 340 logged trading days. Zero subscriber-only signals, zero pump-and-dump chats.</p>
+<p style="margin-top:16px">Built Strong Trading around one idea — the traders who win are the ones who install a repeatable process and follow it when it's boring. Host of The Day Trading Show podcast. Coach to 25 serious traders per cohort.</p>
+</div>
+</div>
+</div></section>
+<div class="divider"></div>
+<section><div class="container" style="max-width:820px">
+<div class="eyebrow reveal">FAQ</div>
+<h2 class="reveal">Common Questions</h2>
+<div style="margin-top:40px">
+<div class="faq-item reveal" onclick="this.classList.toggle('open')"><div class="faq-q"><span>Do you give trade signals?</span><div class="faq-plus"></div></div><div class="faq-a"><p>No. Signals build dependent traders. The goal is the opposite — you learn a process you can execute on your own for the rest of your career.</p></div></div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')"><div class="faq-q"><span>What markets do you trade?</span><div class="faq-plus"></div></div><div class="faq-a"><p>Primarily futures (MES, NQ) and options (credit spreads). The framework applies to any liquid market.</p></div></div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')"><div class="faq-q"><span>What if I've never traded?</span><div class="faq-plus"></div></div><div class="faq-a"><p>The community is for traders with at least 6 months of experience. Beginners should start with the free Pre-Market Game Plan and the podcast before applying.</p></div></div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')"><div class="faq-q"><span>How long are the cohorts?</span><div class="faq-plus"></div></div><div class="faq-a"><p>Quarterly (90 days). After the first cohort, members can opt into ongoing membership.</p></div></div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')"><div class="faq-q"><span>Is the 25-seat cap real?</span><div class="faq-plus"></div></div><div class="faq-a"><p>Yes. When a cohort fills, it fills until the next quarter. No exceptions. The cap is what makes the coaching personal.</p></div></div>
+</div>
+</div></section>
+<section style="text-align:center"><div class="container">
+<h2 class="reveal">Ready To Trade Like A Pro?</h2>
+<p class="reveal" style="margin:20px auto 40px">Apply below. Takes 5 minutes. I review every application.</p>
+<a href="#apply" class="cta-primary reveal">Apply Now →</a>
+</div></section>
+<footer class="footer"><div class="container"><p>© 2026 Strong Trading LLC.</p></div></footer>
+<script>const obs=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('in')),{threshold:.1});document.querySelectorAll('.reveal').forEach(e=>obs.observe(e));</script>
+</body></html>
